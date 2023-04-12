@@ -1,0 +1,260 @@
+{
+  "categories": [
+    {
+      "ID": 1,
+      "Name": "Mobile"
+    },
+    {
+      "ID": 2,
+      "Name": "Labtop"
+    },
+    {
+      "ID": 5,
+      "Name": "Headphone"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Mohamed",
+      "email": "mo@gmail.com",
+      "mobileNumber": "1561556",
+      "city": "giza",
+      "street": "8",
+      "password": "13123",
+      "retypePassword": "232",
+      "data": ""
+    },
+    {
+      "fullName": "mohamed essam",
+      "email": "moessam@gmail.com",
+      "city": "Giza",
+      "street": "8",
+      "password": "265165",
+      "retypePassword": "1561515",
+      "data": "21/03/2023",
+      "mobileNumber": 11515515,
+      "id": "aWcoZ54"
+    },
+    {
+      "fullName": "Samy",
+      "email": "samy@gmail.com",
+      "city": "Giza",
+      "street": "20",
+      "password": "25468",
+      "retypePassword": "2468",
+      "data": "21/03/2023",
+      "mobileNumber": 11124151,
+      "id": "2Wyq0xP"
+    },
+    {
+      "fullName": "test",
+      "email": "moessam@gmail.com",
+      "city": "cairo",
+      "street": "9",
+      "password": "154145",
+      "retypePassword": "151",
+      "data": "Enter Date Here",
+      "mobileNumber": 1561515,
+      "id": "CnXgWEl"
+    },
+    {
+      "fullName": "mohamed essam",
+      "email": "moessam@gmail.com",
+      "city": "Giza",
+      "street": "8",
+      "password": "123456",
+      "retypePassword": "123456",
+      "data": "21/03/2023",
+      "mobileNumber": 1115404539,
+      "id": "wlRXXZ0"
+    },
+    {
+      "fullName": "mohamed essam",
+      "email": "moessam@gmail.com",
+      "city": "Giza",
+      "street": "8",
+      "password": "123456",
+      "retypePassword": "123456",
+      "data": "21/03/2023",
+      "mobileNumber": 215152515,
+      "id": "tOaKDPH"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "Name": "Samsung Galaxy S23 Ultra 12GB Ram 512GB",
+      "Quantity": 4,
+      "Price": 55900,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2023/02/Samsung-Galaxy-S23-Ultra-12GB-Ram-512GB-9.jpg",
+      "CategoyID": 1,
+      "Discount": 0
+    },
+    {
+      "id": 2,
+      "Name": "Samsung Galaxy Z Fold4 5G 12GB Ram 256GB",
+      "Quantity": 4,
+      "Price": 42900,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/09/Samsung-Galaxy-Z-Fold4-7.jpg",
+      "CategoyID": 1,
+      "Discount": 0.1
+    },
+    {
+      "id": 3,
+      "Name": "Apple iPhone 14 Pro Max",
+      "Quantity": 1,
+      "Price": 45000,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/09/Apple-iphone-14-pro-4.jpg",
+      "CategoyID": 1,
+      "Discount": 0.1
+    },
+    {
+      "id": 4,
+      "Name": "Apple iPhone 14",
+      "Quantity": 2,
+      "Price": 31999,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/09/Apple-iphone-14-2.jpg",
+      "CategoyID": 1,
+      "Discount": 0.15
+    },
+    {
+      "id": 5,
+      "Name": "Lenovo IdeaPad 5 14ALC05 Laptop 14″ FHD (AMD Ryzen 7-5700U 1.8GHz /512GB SSD/8GB RAM)",
+      "Quantity": 0,
+      "Price": 19999,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/11/Lenovo-IdeaPad-5-14ALC05-Laptop-14-10.jpg",
+      "CategoyID": 2,
+      "Discount": 0
+    },
+    {
+      "id": 6,
+      "Name": "Lenovo IdeaPad Gaming 3 15ACH6 Laptop 15.6″ FHD (AMD Ryzen 5-5600H 3.3GHz /512GB SSD/8GB RAM)",
+      "Quantity": 1,
+      "Price": 24500,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/11/Lenovo-IdeaPad-Gaming-3-15ACH6-Laptop-15.6-8.jpg",
+      "CategoyID": 2,
+      "Discount": 0.1
+    },
+    {
+      "id": 7,
+      "Name": "Apple Macbook Air 13-inch M2 chip with 8-Core CPU 10-Core GPU /8GB /512GB",
+      "Quantity": 1,
+      "Price": 59000,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/10/MacBook-Air-13-M2-Chip-with-8-Core-CPU-8-Core-GPU-256GB-Storage-8.jpg",
+      "CategoyID": 2,
+      "Discount": 0.15
+    },
+    {
+      "id": 8,
+      "Name": "Apple AirPods Pro (2nd generation) With MagSafe Charging Case",
+      "Quantity": 1,
+      "Price": 8999,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/09/Apple-AirPods-Pro-2nd-generation-5.jpg",
+      "CategoyID": 5,
+      "Discount": 0
+    },
+    {
+      "id": 9,
+      "Name": "Bose Sleepbuds II Truly Wireless Noise Canceling Earbuds",
+      "Quantity": 2,
+      "Price": 9499,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2023/02/Bose-Sleepbuds-II-Truly-Wireless-Noise-Canceling-Earbuds-9.jpg",
+      "CategoyID": 5,
+      "Discount": 0.1
+    },
+    {
+      "id": 10,
+      "Name": "Sony WH-1000XM5 Wireless Noise Cancelling Headphone",
+      "Quantity": 3,
+      "Price": 17499,
+      "Img": "https://www.imediastores.com/wp-content/uploads/2022/10/Sony-WH-1000XM5-Wireless-Noise-Cancelling-Headphone-9.jpg",
+      "CategoyID": 5,
+      "Discount": 0.1
+    },
+    {
+      "ID": 12,
+      "Name": "Moblie",
+      "Price": 2522,
+      "Quantity": 3,
+      "CategoyID": 1,
+      "Img": "",
+      "Discount": 0.01,
+      "id": 11
+    },
+    {
+      "ID": 12,
+      "Name": "Moblie",
+      "Price": 2522,
+      "Quantity": 3,
+      "CategoyID": 1,
+      "Img": "",
+      "Discount": 0.01,
+      "id": 12
+    },
+    {
+      "ID": 12,
+      "Name": "Moblie",
+      "Price": 2522,
+      "Quantity": 3,
+      "CategoyID": 1,
+      "Img": "https://img.etimg.com/thumb/msid-59424968,width-640,resizemode-4,imgsize-182738/nokia-1100.jpg",
+      "Discount": 0.01,
+      "id": 13
+    },
+    {
+      "ID": 12,
+      "Name": "Moblie",
+      "Price": 2522,
+      "Quantity": 3,
+      "CategoyID": 1,
+      "Img": "https://img.etimg.com/thumb/msid-59424968,width-640,resizemode-4,imgsize-182738/nokia-1100.jpg",
+      "Discount": 0.01,
+      "id": 14
+    },
+    {
+      "ID": 12,
+      "Name": "Moblie",
+      "Price": 2522,
+      "Quantity": 3,
+      "CategoyID": 1,
+      "Img": "https://img.etimg.com/thumb/msid-59424968,width-640,resizemode-4,imgsize-182738/nokia-1100.jpg",
+      "Discount": 0.01,
+      "id": 15
+    },
+    {
+      "ID": 12,
+      "Name": "Moblie",
+      "Price": 2522,
+      "Quantity": 3,
+      "CategoyID": 1,
+      "Img": "https://img.etimg.com/thumb/msid-59424968,width-640,resizemode-4,imgsize-182738/nokia-1100.jpg",
+      "Discount": 0.01,
+      "id": 16
+    },
+    {
+      "Name": "test",
+      "Quantity": 12,
+      "Price": 256123,
+      "CategoyID": "2",
+      "id": 17
+    },
+    {
+      "Discount": "0.1",
+      "CategoyID": "1",
+      "Price": 2500,
+      "Quantity": 23,
+      "Name": "test",
+      "id": 18
+    },
+    {
+      "Name": "Apple",
+      "Quantity": 12,
+      "Price": 2500,
+      "CategoyID": "1",
+      "Img": "https://www.imediastores.com/wp-content/uploads/2020/10/Apple-Iphone-12-2-1.jpg",
+      "Discount": "0.1",
+      "id": 19
+    }
+  ]
+}

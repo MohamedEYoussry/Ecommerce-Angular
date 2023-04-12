@@ -1,0 +1,37 @@
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">Product Name</label>
+      <input type="text" id="fname" name="firstname" #prodName placeholder="Product name..">
+  
+      <label for="lname">Image Url</label>
+      <input type="text" id="lname" name="lastname" #prodImg placeholder="Image..">
+  
+      <label for="Quantity">Quantity</label>
+      <input type="text" id="Quantity" name="Quantity" #prodQ placeholder="Quantity..">
+      <label for="Price">Price</label>
+      <input type="text" id="Price" name="Price" #prodPrice placeholder="Price..">
+
+      <label for="CategoyID">CategoyID</label>
+      <select id="CategoyID" name="CategoyID" #prodcat>
+        <option value="1">Mobile</option>
+        <option value="2">Laptop</option>
+        <option value="5">HeadPhone</option>
+      </select>
+      <label for="Discount">Discount</label>
+      <select id="Discount" name="Discount" #prodDis>
+        <option value="0">No Discount</option>
+        <option value="0.1">Discount 10%</option>
+        <option value="0.15">Discount 15%</option>
+      </select>
+      <label for="ID">ID</label>
+      <input type="text" id="ID" name="ID" #prodID placeholder="ID..">
+
+ 
+  
+        <button   type="submit"
+        class="btn btn-danger" (click)="addNewProd(prodID.value,prodName.value,prodQ.value,prodPrice.value,prodImg.value,prodcat.value,prodDis.value)">
+         Add</button>
+         <!-- <input type="submit"placeholder="Add" (click)="addNewProd(prodID.value,prodName.value,prodQ.value,prodPrice.value,prodImg.value,prodcat.value,prodDis.value)"> -->
+    </form>
+  </div>

@@ -1,0 +1,42 @@
+<div>
+    <h1>{{printAds}}</h1>
+</div>
+<div class="row">
+    <h1 class="col-4">{{store.name}}</h1>
+    <img id="logoImage" [src]="store.logo" class="col" width="200" height="100" *ngIf='hideLogo'>
+    <div id="divClient" class="col" *ngIf='showDiv'>Thanks for purchasing from our Store {{ClientName}}</div>
+    <h3 class="col-4" *ngIf="discount!=0">We offer an explicit discount of {{discount*100}}%</h3>
+</div>
+<button class="btn btn-danger" [routerLink]="['/newProduct']">Add New Product</button>
+<table class="table">
+    <thead>
+        <tr class="bg-dark text-light">
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Image</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Details</th>
+            <th scope="col">Price</th>
+            <th scope="col">Count</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let prod of prodListofCatID ;let i=index">
+            <tr *ngIf="prod.Quantity!=0" [ngStyle]="{'background-color':(prod.Quantity==1)?'lightyellow':'white'}">
+                <td>{{i+1}}</td>
+                <td>{{prod.Name}}</td>
+                <td><img src="{{prod.Img}}" width="200px" appBorderBox  ></td>
+                <td>{{prod.Quantity}}</td>
+                <td *ngIf="prod.Discount!=0">Discount {{prod.Discount*100}}%</td>
+                <td *ngIf="prod.Discount==0">No Discount</td>
+                <td><button class="btn btn-success" (click)="openDetails(i+1)">Details</button></td>
+                <td>{{prod.Price}}</td>
+                <td><input   id="quintity" type="number" class="form-control" [value]="1"  #prodCount min="1"  max = {{prod.Quantity}} > </td>
+                <td><button class="btn btn-danger" (click)="buyClick(); quantity(prod,prodCount.value); addtoCart(prod.Price,prodCount.value,prod.Name)">Add To Cart</button></td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
+

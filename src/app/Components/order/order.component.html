@@ -1,0 +1,33 @@
+<h3 style="text-align: left;">Select Category</h3>
+<select name="cat" id="cat"  class="form-control" [(ngModel)]="selectedCatID">
+    <option value="0">All Products</option>
+    <option *ngFor="let cat of catList" [value]="cat.ID">{{cat.Name}}</option>
+</select>
+<app-home [receivedCatID]="selectedCatID" (Cart)="cartProducts($event)"></app-home> 
+
+
+<table class="table">
+    <thead>
+        <tr class="bg-dark text-light">
+            <th scope="col">Cart</th>
+            <th scope="col">Price</th>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Date</th>
+            <th scope="col">Total Price </th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+         <ng-container *ngFor="let prod of cartProductsArr ;let i=index">
+            <tr>  
+                <td>{{i+1}}</td>
+                <td>{{prod[3]}}</td>
+                <td>{{prod[1]}}</td>
+                <td>{{prod[2]}}</td>
+                <td>{{date|date:"medium"}}</td>
+                <td>{{prod[0]|currency:"EGP"}}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

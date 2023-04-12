@@ -1,0 +1,55 @@
+<!-- <button class="btn btn-success" (click)="addnewPrd()">add</button> -->
+<form #produtForm="ngForm" (ngSubmit)="addnewPrd()">
+    <div class="mb-3">
+      <label for="prdName" class="form-label">Product Name</label>
+  
+      <input type="text" #prdNameInput="ngModel" class="form-control" name="prdName" id="prdName" [(ngModel)]="prd.Name" required
+       pattern="[A-Za-z]{3,5}" 
+      [class.is-valid]="prdNameInput.valid" [class.is-invalid]="prdNameInput.invalid">
+  
+      <!-- <div class="alert alert-danger" [hidden]="prdNameInput.valid || prdNameInput.untouched">
+        Name is required and must be at least 3 letters.
+      </div> -->
+  
+      <div class="alert alert-danger" [hidden]="prdNameInput.valid || prdNameInput.untouched">
+  
+        <small *ngIf="prdNameInput.errors?.['required']">Product name is required</small>
+        <small *ngIf="prdNameInput.errors?.['pattern']">Product name must be at least 3 letters.</small>
+      </div>
+    </div>
+  
+  
+    <div class="mb-3">
+      <label for="prdQuant" class="form-label">Quantity</label>
+      <input type="number" class="form-control" name="prdQuant" id="prdQuant" [(ngModel)]="prd.Quantity" required>
+    </div>
+  
+    <div class="mb-3">
+      <label for="prdPrc" class="form-label">Price</label>
+      <input type="number" class="form-control" name="prdPrc" id="prdPrc" [(ngModel)]="prd.Price" required>
+    </div>
+  
+    <div class="mb-3">
+      <label for="prdCat" class="form-label">Select Category</label>
+      <select class="form-control" name="prdCat" id="prdCat" [(ngModel)]="prd.CategoyID" required>
+        <option *ngFor="let cat of catList" [value]="cat.ID">
+          {{cat.Name}}
+        </option>
+      </select>
+    </div>
+    <div class="mb-3">
+        <label for="prdImg" class="form-label">Image</label>
+        <input type="string" class="form-control" name="prdImg" id="prdImg" [(ngModel)]="prd.Img" required>
+      </div>
+    <div class="mb-3">
+        <label for="prdDis" class="form-label">Select Discount</label>
+        <select class="form-control" name="prdDis" id="prdDis" [(ngModel)]="prd.Discount" required>
+            <option value="0">No Discount</option>
+            <option value="0.1">Discount 10%</option>
+            <option value="0.15">Discount 15%</option>
+        </select>
+      </div>
+  
+  
+    <button type="submit" class="btn btn-success" [disabled]="produtForm.invalid">Submit</button>
+  </form>

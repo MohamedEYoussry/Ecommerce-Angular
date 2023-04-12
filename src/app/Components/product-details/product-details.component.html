@@ -1,0 +1,32 @@
+<!-- Name : {{prod[0].Name}} 
+Price : {{prod[0].Price}} 
+Quantity : {{prod[0].Quantity}} 
+<img src={{prod[0].Img}} alt="" width="200px"> -->
+
+
+<section class="articles " style="text-align: center; align-items: center;">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+            <img src={{foundProd[0].Img}} alt="" width="200px">
+        </figure>
+        <div class="article-body">
+          <h2>Name : {{foundProd[0].Name}} 
+        </h2>
+        <h2>Price : {{foundProd[0].Price}} 
+
+        </h2>
+        <h2>Quantity : {{foundProd[0].Quantity}} 
+
+        </h2>
+         
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-info" (click)="lastProd()" [disabled]="currentID==prodIdList[0]">Last</button>
+        <button class="btn btn-dark" (click)="nextProd()" [disabled]="currentID==prodIdList[prodIdList.length-1]">Next</button>
+
+      </div>
+    </article>
+    <article>
+  

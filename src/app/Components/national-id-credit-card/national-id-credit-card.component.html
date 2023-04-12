@@ -1,0 +1,35 @@
+ <!-- <p>national-id-credit-card works!</p> -->
+
+ <div class="container">
+    <form action="action_page.php">
+  <div>
+
+    <label for="National">Enter National  ID</label>
+    <input type="text" id="National" name="National" #NationalID placeholder="National  ID..">
+
+  </div>
+  <button class="btn btn-success" type="submit">Enter</button>
+    
+  <div> 
+    
+    <h3 id="format"> Date : {{NationalID.value|nationalID:"FullDate"}}</h3>
+  </div>
+    </form>
+  </div>
+
+  
+ <div class="container">
+    <form action="action_page.php">
+  <div>
+
+    <label for="creditCard">Enter Credit Card info..</label>
+    <input type="text" id="creditCard" name="creditCard" #creditCard placeholder="Credit Card..">
+
+  </div>
+  <button class="btn btn-success" type="submit">Enter</button>
+    
+  <div> 
+    <h3 id=""> Format : {{creditCard.value|creditCard}}</h3>
+  </div>
+    </form>
+  </div>
